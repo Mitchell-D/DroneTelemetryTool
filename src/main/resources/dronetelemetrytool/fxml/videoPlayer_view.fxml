@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+
+<?import javafx.scene.media.MediaView?>
+<?import javafx.scene.media.MediaPlayer?>
+<?import javafx.scene.media.Media?>
+<?import javafx.scene.Scene?>
+
+
+<VBox fx:id="vBox" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dronetelemetrytool.fxml.VideoPlayer">
+    <stylesheets>
+        <URL value="@DTT_Style.css" />
+    </stylesheets>
+    <HBox alignment="CENTER" prefHeight="600" prefWidth="1000">
+        <MediaView fx:id="mediaView" fitHeight="600" fitWidth="1000"/>
+    </HBox>
+    <HBox alignment="CENTER">
+        <Button fx:id="reverseButton" styleClass="button" text="◀" onAction="#reverseClick"/>
+        <Button fx:id="pauseButton" styleClass="button" text="⏸" onAction="#pauseClick"/>
+        <Button fx:id="forwardButton" styleClass="button" text="▶" onAction="#forwardClick"/>
+        <Button fx:id="fiveSpeedButton" styleClass="button" text="⏭ 5x" onAction="#fiveSpeedClick"/>
+        <Button fx:id="eightSpeedButton" styleClass="button" text="⏭ 8x" onAction="#eightSpeedClick"/>
+    </HBox>
+</VBox>
+
